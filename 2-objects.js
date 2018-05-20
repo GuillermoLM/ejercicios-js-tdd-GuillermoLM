@@ -5,7 +5,14 @@
 
 
 // Aquí tu código
-
+obj = {
+    a:{
+        b: true,
+        c:["",5]
+    },
+    d:6,
+    f:"cosa",
+}
 
 // Hasta aquí
 
