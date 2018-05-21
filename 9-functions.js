@@ -6,10 +6,10 @@
 //  debes utilizar console.log
 //  además debe lanzar un error si no recibe un tipo number
 //  Debes lanzar un error con la sentencia:
-//  throw new Error('convierteEurosEnPesetas debe recibir un number');
+//  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-let convierteEurosEnPesetas = (x) => {
+let muestraPorConsolaEurosEnPesetas = (x) => {
     if (typeof x !== "number") 
     {
         throw new Error("Debes introducir un numero");
@@ -27,26 +27,26 @@ let convierteEurosEnPesetas = (x) => {
 
 
 // TEST 1
-if (typeof convierteEurosEnPesetas === 'function' ) {
-    console.log('apruebas:  convierteEurosEnPesetas es una función');
+if (typeof muestraPorConsolaEurosEnPesetas === 'function' ) {
+    console.log('apruebas:  muestraPorConsolaEurosEnPesetas es una función');
 } else {
-    console.log('suspendes:  convierteEurosEnPesetas NO es una función');
+    console.log('suspendes:  muestraPorConsolaEurosEnPesetas NO es una función');
 }
 
 // TEST 2
-if ( typeof convierteEurosEnPesetas(2) === 'undefined' ) {
-    console.log('apruebas: convierteEurosEnPesetas devuelve undefined');
+if ( typeof muestraPorConsolaEurosEnPesetas(2) === 'undefined' ) {
+    console.log('apruebas: muestraPorConsolaEurosEnPesetas devuelve undefined');
 } else {
-    console.log('suspendes: convierteEurosEnPesetas NO devuelve undefined');
+    console.log('suspendes: muestraPorConsolaEurosEnPesetas NO devuelve undefined');
 }
 
 
 // TEST 4
 try {
-    convierteEurosEnPesetas('1');
-    convierteEurosEnPesetas(true);
-    convierteEurosEnPesetas();
-    console.log('suspendes: convierteEurosEnPesetas debe lanzar un error si no recibe un número');
+    muestraPorConsolaEurosEnPesetas('1');
+    muestraPorConsolaEurosEnPesetas(true);
+    muestraPorConsolaEurosEnPesetas();
+    console.log('suspendes: muestraPorConsolaEurosEnPesetas debe lanzar un error si no recibe un número');
     
 } catch (error) {
     console.log('apruebas');
